@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
-import L1 from "./l1";
+import Map from "./map";
 
 const Index: NextPage = () => {
   return (
-    <L1 />
+    <Map />
   )
 }
 

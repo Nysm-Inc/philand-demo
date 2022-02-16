@@ -1,13 +1,9 @@
-import { useEffect } from "react";
 import { useStarknet } from "@starknet-react/core";
 import { Box, Button } from "@chakra-ui/react";
 
-const WalletConnect = () => {
-  const { account, connectBrowserWallet, error } = useStarknet();
+const WalletStarknet = () => {
+  const { account, connectBrowserWallet } = useStarknet();
 
-  useEffect(() => {
-    connectBrowserWallet();
-  },[])
   return (
     <Box>
       {!account ? (
@@ -24,4 +20,4 @@ const WalletConnect = () => {
   )
 }
 
-export default WalletConnect;
+export default WalletStarknet;

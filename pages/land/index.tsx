@@ -13,7 +13,7 @@ type Asset = keyof typeof assets;
 
 type Object = Asset | ""
 
-const Index: NextPage = () => {
+const Land: NextPage = () => {
   const [land, setLand] = useState<Object[][]>([
     [ "", "", "", "", "", "", "", "" ],
     [ "", "", "", "", "", "", "", "" ],
@@ -42,9 +42,12 @@ const Index: NextPage = () => {
                   borderRadius="none"
                   padding={0}
                   onClick={() => {
-                    const copied = JSON.parse(JSON.stringify(land))
-                    copied[i][j] = selected
-                    setLand(copied)
+                    if (!selected) return;
+
+                    alert("L2 Tx");
+                    const copied = JSON.parse(JSON.stringify(land));
+                    copied[i][j] = selected;
+                    setLand(copied);
                   }}
                 >
                   {object && (
@@ -77,4 +80,4 @@ const Index: NextPage = () => {
   )
 }
 
-export default Index;
+export default Land;
