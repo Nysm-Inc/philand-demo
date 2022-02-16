@@ -1,5 +1,6 @@
 import { Box, Flex, Heading } from "@chakra-ui/react";
 import Link from "next/link";
+import { WalletConnect } from "../wallet"
 
 const Header = () => {
   return (
@@ -9,7 +10,7 @@ const Header = () => {
       </Heading>
 
       <Box marginLeft="auto">
-        connect
+        <WalletConnect />
       </Box>
     </Flex>
   );
