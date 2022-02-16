@@ -1,0 +1,47 @@
+.root {
+  padding: 0 2rem;
+  display: flex;
+}
+
+.plane {
+
+}
+
+.assets {
+
+}
+
+.asset {
+
+}
+
+.asset_focus {
+  outline: none;
+  opacity: 0.8;
+  box-shadow: 0 0 0 1px lightskyblue;
+}
+
+.row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.square {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #999999;
+  float: left;
+  margin-right: -1px;
+  margin-top: -1px;
+}
+
+/* .square:active {
+  outline: none;
+} */
+
+/* box component */
+.box {
+  margin: 0 2rem
+}
+
